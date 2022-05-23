@@ -14,6 +14,12 @@ const AddPost = () => {
       let arr = stringdate.split(' ')
       let createdAt = arr.slice(1,4).join(" ")
       let timeAt = arr.slice(4,5).join("")
+      if(timeAt.split(':')[1]>=12){
+        timeAt+=' PM'
+      }
+      else{
+        timeAt+=' AM'
+      }
       let img=postImage.split(".")
       let likes = Math.floor(Math.random() * 200) + 1
       const Imagetype = img[img.length-1]

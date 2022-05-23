@@ -23,8 +23,8 @@ function Card({name,location,description,likes,postImage,createdAt,timeAt}) {
         <div className="Date" style={{marginRight:'10px'}}>{createdAt}</div>
       </div>
       <div className="likesTime">
-      <p className="numberOfLikes" style={{marginLeft:'10px'}}>{likes} likes </p>
-      <p className="time" style={{marginRight:'10px'}} >{timeAt}</p>
+        <p className="numberOfLikes" style={{marginLeft:'10px'}}>{likes} likes </p>
+        <p className="time" style={{marginRight:'10px'}} >{timeAt}</p>
       </div>
       <h3 className="describe" >{description}</h3>
     </div>
