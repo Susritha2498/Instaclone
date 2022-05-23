@@ -58,7 +58,7 @@ const AddPost = () => {
   return (
     <div className='form-page'>
         <NavBar/>
-        <form action="https://instaclone198.herokuapp.com/add/post" method="post" className='form-container' onSubmit={handleSubmit}>
+        <form action="https://localhost:3000/add/post" method="post" className='form-container' onSubmit={handleSubmit}>
             <div id='choose-image' className='form-elements'>
               <input type="file" id="postImage" placeholder='No file is chosen' required/>
               {/* <div className='fakefile'>
