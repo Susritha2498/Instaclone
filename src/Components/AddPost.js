@@ -1,7 +1,9 @@
 import React from 'react'
 import NavBar from './NavBar'
+import { useNavigate } from 'react-router-dom'
 
 const AddPost = () => {
+  const gotoLandpage = useNavigate()
   const handleSubmit = async(e)=>{
 
     e.preventDefault()
@@ -45,6 +47,7 @@ const AddPost = () => {
 
         // const res = await response.json()
         e.target.reset()
+        gotoLandpage('/landpage')
         // console.log(res)
       }
       else{

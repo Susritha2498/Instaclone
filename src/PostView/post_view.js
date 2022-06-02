@@ -11,7 +11,7 @@ export default function PostView() {
       <section className='section2'>
         <img src={cover} alt="StartImg" className='firstPageImage' />
         <div className='Enterhere'>
-          <h1>10x Team 04</h1>
+          <h1>MEMORIES</h1>
           <Link to='/landpage'><button>Enter</button></Link>
         </div>
       </section>
